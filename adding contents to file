@@ -6,6 +6,7 @@
 
   tasks:
   - name: Ansible write content to a file
+    become_user:  sudo
     copy:
       dest: "/Users/purush/Documents/Ansible/empty.txt"
       content: |
