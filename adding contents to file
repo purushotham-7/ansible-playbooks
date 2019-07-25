@@ -1,0 +1,13 @@
+---
+- name: contentfile
+  hosts: remote
+ # hosts: 127.0.0.1
+#  connection: local
+
+  tasks:
+  - name: Ansible write content to a file
+    copy:
+      dest: "/Users/purush/Documents/Ansible/empty.txt"
+      content: |
+        server1 server2
+        remote
