@@ -1,0 +1,13 @@
+---
+- name: contentfile
+  hosts: remote
+  tasks:
+  - name: installing gedit
+    command: sudo apt-get install gedit
+  - name: Install nginx
+    command: sudo apt-get install nginx
+  - name: installing sublime
+    shell:  |
+      sudo add-apt-repository ppa:webupd8team/sublime-text-3
+      sudo apt-get update
+      sudo apt-get install sublime-text-installer
