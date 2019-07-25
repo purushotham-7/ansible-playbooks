@@ -1,0 +1,14 @@
+---
+- name: creating directory and file
+  hosts: remote
+ # hosts: 127.0.0.1
+#  connection: local
+  tasks:
+    - name: Ansible create directory
+      file:
+        path: /Users/purush/Documents/Ansible
+        state: directory
+    - name: create file
+      file:
+        path: /Users/purush/Documents/Ansible/empty.txt
+        state: touch
