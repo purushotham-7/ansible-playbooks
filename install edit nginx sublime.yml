@@ -1,6 +1,6 @@
 ---
 - name: contentfile
-  hosts: remote
+  hosts: root@9.30.194.94
   tasks:
   - name: installing gedit
     command: sudo apt-get install gedit
