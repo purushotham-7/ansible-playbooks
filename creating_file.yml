@@ -1,6 +1,7 @@
 ---
+
 - name: creating directory and file
-  hosts: remote
+  hosts:  root@9.30.194.94
  # hosts: 127.0.0.1
 #  connection: local
   tasks:
